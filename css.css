@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+body
+{
+    font-family: "Source Sans Pro", sans-serif;
+}
+.container {
+  min-height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding-bottom: auto;
+}
+.container form {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.618);
+  padding: 20px;
+  width: 600px;
+  padding-top: 160px;
+}
+.container form .inputbox {
+  margin-top: 20px;
+}
+.container form .inputbox span {
+  display: block;
+  color: rgb(135, 131, 131);
+  padding-bottom: 5px;
+}
+.container form .inputbox input,
+.container form .inputbox select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+.container form .flexbox {
+  display: flex;
+  gap: 15px;
+}
+.container form .flexbox .inputbox {
+  flex: 1 1 150px;
+}
+.container form .submit-input {
+  width: 100%;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 21px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s linear;
+  border-radius: 10px;
+  
+}
+.container .card-container
+{
+  position: relative;
+  margin-bottom: -150px;
+  height: 250px;
+  width: 400px;
+}
+
+/*  CARD FRONT*/
+.container .card-container .card-front
+{
+   position:absolute;
+   height: 100%;
+   width: 100%;
+   top:0;left: 0;
+   background: linear-gradient(45deg, blueviolet, deeppink);
+   border-radius: 7px;
+   backface-visibility: hidden;
+   box-shadow: 0 15px 25px rgb(116, 114, 114);
+   padding: 20px;
+
+}
+.container .card-container .card-front .image
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top:-40px;
+}
+.container .card-container .card-front .image img:nth-child(1)
+{
+  margin-left: -12px;
+  width: 80px;
+}
+.container .card-container .card-front .image img:nth-child(2)
+{
+  width: 80px;
+}
+.container .card-container .card-front .card-number-box
+{
+  padding: 25px;
+  font-size: 29px;
+  color: white;
+  margin-left: 23px;
+}
+.container .card-container .card-front .flexbox
+{
+  margin-top: 13px;
+  display: flex;
+  color: white;
+  line-height: 22px;
+ 
+}
+.container .card-container .card-front .flexbox .box:nth-child(1)
+{
+  margin-right: auto;
+}
+
+/* ENG OF CARD FRONT */
+
+/* CARD BACK */
+.container .card-container .card-back
+{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  top:0;left: 0;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  border-radius: 7px;
+  text-align: right;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgb(178, 177, 177);
+  padding: 20px 0;
+  transform: perspective(1000px)  rotateY(180deg);
+  transition:transform .8s ease-out;
+}
+.container .card-container .card-back .stripe
+{
+  width: 100%;
+  background: black;
+  margin: 10px 0;
+  height: 50px;
+}
+.container .card-container .card-back .box
+{
+    padding: 0 20px;
+}
+.container .card-container .card-back .box span
+{
+  color: white;
+  font-size: 19px;
+}
+.container .card-container .card-back .box .cvv-box
+{
+  height: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  box-shadow: 0 15px 25px rgb(116, 114, 114);
+  background:#fff;
+  border-radius: 5px;
+  width: 100%;
+
+}
+.container .card-container .card-back .box .img-back
+{
+  width: 100px;
+  margin-top: 20px;
+}
